@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>功能数据</title>
+    <link href="css3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="content">
+    <div class="ui_content">
+        <div class="ui_text_indent">
+            <div id="box_border">
+                <div id="box_top">搜索</div>
+                <div id="box_center">
+                    节点ID &nbsp;&nbsp;<input type="text" id="NodeID"  class="ui_input_txt02"/>
+                </div>
+                <div id="box_bottom">
+                    <input type="button" value="查询" class="ui_input_btn01"/>
+                    <input type="button" value="新增" class="ui_input_btn01" id="addBtn" onclick="onAddTR()"/>
+                    <input type="button" value="删除" class="ui_input_btn01" onclick="removeRow()"/>
+                    <input type="button" value="导入" class="ui_input_btn01" id="importBtn" onclick="Refresh()"/>
+                    <input type="button" value="导出" class="ui_input_btn01"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ui_content">
+        <div class="ui_tb">
+            <table id="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                <tr>
+                    <th width="30"><input type="checkbox" id="all"  /></th>
+                    <th>NodeID</th>
+                    <th>GroupID</th>
+                    <th>TimeSample</th>
+                    <th>Deep_Left(cm)</th>
+                    <th>Deep_Center(cm)</th>
+                    <th>Deep_Right(cm)</th>
+                    <th>Energy(J)</th>
+                    <th>&nbsp;Power&nbsp;</th>
+                    <th>&nbsp;&nbsp;Rssi&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;LQI&nbsp;&nbsp;</th>
+                    <th>LocationX</th>
+                    <th>locationY</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check"/></td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck"class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck"  class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="IDCheck" class="check" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+<script>
+    function onAddTR()
+    {
+        var tb = document.getElementById("table");
+        var oTr = document.createElement('tr');     //创建TR
+        oTr.innerHTML='<td><input type="checkbox" name="IDCheck" class="check" /></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>';
+        tb.appendChild(oTr);
+    }
+
+    function removeRow()
+    {
+        var tb = document.getElementById("table");
+        var rowCount = tb.rows.length; //获得当前表格的行数
+        if(rowCount >=12){
+            tb.removeChild(tb.lastChild);
+        }
+    }
+    function Refresh() {
+        window.location.reload();
+    }
+
+
+
+</script>
+</body>
+</html>

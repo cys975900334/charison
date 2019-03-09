@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui">
+    <title>智能回收箱管理系统</title>
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+</head>
+<body>
+<div id="content">
+    <div id="text" onclick="ChangeStyle()">
+        <p class="text-one">Smart Recycable Bin</p>
+        <p class="text-two">If you want to see more, please log in.</p>
+    </div>
+    <form id="log-in">
+        <h1>Login now</h1>
+        <div class="main">
+            <p>Username</p>
+            <input id="Username" name="Username" type="text" value="Please enter your username"  onfocus="value =''" >
+            <p>password</p>
+            <input id="password" name="password" type="password" value="">
+            <p><input class="checkbox" name="checkbox" type="checkbox">Remember me</p>
+            <input class="submit" type="submit" value="Log In"onclick="return Login()">
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function ChangeText()
+    {
+        document .getElementById("text").style.webkitAnimation="scaleDraw 5s ease-in-out infinite";
+    }
+    ChangeText();
+    //通过渐变的形式把登入界面展示出来
+    function ChangeStyle(){
+        document .getElementById("text") .style.opacity="0";
+        setTimeout(function () {
+            document.getElementById("text").style.display= "none";
+
+        },800);
+        document.getElementById("log-in").style .display="inline";
+        setTimeout(function () {
+            document.getElementById("log-in").style.opacity = 1;
+
+        },800);
+    }
+    //设置登入界面的账号密码为just，只有正确才能进入数据管理界面
+    function Login() {
+        if(document.getElementById("password").value==="just"&&document.getElementById("Username").value==="just")
+        {
+            window.open("html.php");
+        }
+        else {
+            alert("Username Or Password Failed!Please Try Again!");
+        }
+        return false;
+
+    }
+</script>
+</body>
+</html>

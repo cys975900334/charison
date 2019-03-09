@@ -1,0 +1,113 @@
+body{
+    background: url(../picture/background.jpg) no-repeat center center fixed;
+    height: auto;
+    zoom: 0.8;
+}
+@font-face {
+    /* font-properties */
+    font-family: Amble-Regular-webfont;
+    src: url("Amble-Regular-webfont.ttf")format('truetype');
+}
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+}
+#content{
+    height: 100%;
+    position: relative;
+    font-family:qaawsAmble-Regular-webfont;
+
+}
+#text{
+    position: absolute;
+    text-align: center;
+    margin: 14% 25% ;
+    width:50%;
+    color: white;
+    display: inline;
+    transition: 1s;
+    opacity: 1;
+    -webkit-animation: none;
+}
+.text-one{
+    font-size: 4.2em;
+}
+.text-two{
+    font-size: 1.5em;
+}
+#log-in{
+    background: rgba(105,105,105,0.3);
+    font-size: 1.5em;
+    width:35% ;
+    border: green 1px solid;
+    border-radius: 20px;
+    position:absolute;
+    margin:  5% 33% ;
+    display: none;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+    font-family: Amble-Regular-webfont;
+}
+#log-in h1{
+    text-align: center;
+    font-size: 3em;
+}
+#log-in .main{
+    margin-left: 25%;
+}
+#Username{
+    width: 70%;
+    height: 40px;
+    border:1px solid rgba(255,255,255,0.8);
+    border-radius: 3px 3px 3px 3px;
+    background-color: transparent;
+    color:white ;
+    color:rgba(255,255,255,0.7);
+    font-size: 0.8em;
+}
+#log-in .main p{
+    margin-bottom: 0;
+    font-size: 1em;
+    margin-top: 10%;
+}
+#password{
+    width: 70%;
+    height: 40px;
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius: 3px 3px 3px 3px;
+    background-color: transparent;
+    color:white ;
+    color:rgba(255,255,255,0.7);
+    font-size: 0.8em;
+}
+.checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+.submit{
+    width: 100px;
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left:25% ;
+    border-radius:3px 3px 3px 3px;
+    background: white;
+    color:black;
+    border:1px solid rgba(255,255,255,0);
+    transition: all 0.5s;
+    font-size: 0.8em;
+    opacity: 0.7;
+}
