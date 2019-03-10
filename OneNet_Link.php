@@ -7,4 +7,5 @@ $device_id = 518696301;
 $sm = new OneNetApi($apikey, $apiurl);
 $device = $sm->device_delete($device_id);
 var_dump($device);
+
  ?>

@@ -219,7 +219,6 @@ class OneNetApi
         if (empty($device_id) || empty($datastream_id)) {
             return FALSE;
         }
-        
         // 对空格进行转义
         // $datastream_id = str_replace(" ","+", $datastream_id);
         $datastream_id = rawurlencode($datastream_id); // 空格处理的修改 2015-08-25
